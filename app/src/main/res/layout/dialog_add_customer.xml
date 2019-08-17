@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_background_shape"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_alignWithParentIfMissing="true"
+>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Create new Customer"
+              android:textColor="@color/White"
+              android:textSize="20dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="5dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginBottom="5dp"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInput_FirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_input_line"
+            android:padding="5dp"
+            app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:maxLength="13"
+                android:textColorHint="@color/White"
+        />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInput_LastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape_input_line"
+            android:padding="5dp"
+            app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:maxLength="13"
+                android:textColorHint="@color/White"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInput_PhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_input_line"
+            app:errorEnabled="true"
+
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+    >
+
+        <android.support.design.widget.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:drawablePadding="50dp"
+                android:gravity="center"
+                android:hint="Phone Number"
+
+
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:textColorHint="@color/White"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInput_BirthDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_input_line"
+            app:errorEnabled="true"
+
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+    >
+
+        <android.support.design.widget.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:drawablePadding="50dp"
+                android:gravity="center"
+                android:hint="Birth Date"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:maxLength="12"
+                android:textColorHint="@color/White"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/TextInput_MoreInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:background="@drawable/shape_input_line"
+            app:counterEnabled="true"
+            app:counterMaxLength="280"
+            android:theme="@style/Widget.Design.TextInputLayout"
+
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+    >
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="More Info"
+                android:gravity="center|top"
+                android:maxLength="280"
+                android:inputType="textLongMessage|textMultiLine"
+                android:background="@null"
+                android:scrollbars="horizontal"
+                android:elevation="5dp"
+
+                android:layout_margin="5dp"
+                android:paddingTop="8dp"
+                android:textColorHint="@color/White"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="15dp"
+                  android:paddingRight="15dp"
+                  android:paddingBottom="15dp">
+
+        <Button android:text="Create"
+                android:id="@+id/BTN_CreateNew_Customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+
+
+        <Button android:text="Cancel"
+                android:id="@+id/BTN_CancelDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
